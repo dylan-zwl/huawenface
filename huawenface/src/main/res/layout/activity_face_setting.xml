@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="4"
+                android:text="@string/club_id"
+
+                android:textColor="#333" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dialog_input_group_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_group_id_input"
+                android:padding="5dp"
+                android:textColor="#333"
+                android:textColorHint="#999"
+                android:theme="@style/EditTextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="4"
+
+                android:text="@string/device_id"
+                android:textColor="#333" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dialog_input_device_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_device_id_input"
+
+                android:padding="5dp"
+                android:textColor="#333"
+                android:textColorHint="#999"
+                android:theme="@style/EditTextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="4"
+
+                android:text="@string/scale"
+                android:textColor="#333" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dialog_input_scale"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_scale_input"
+
+                android:padding="5dp"
+                android:textColor="#333"
+                android:textColorHint="#999"
+                android:theme="@style/EditTextView" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="识别精度：2-32，默认16"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="4"
+
+                android:text="@string/delay_time"
+                android:textColor="#333" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dialog_input_delay_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_device_delay_time"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333"
+                android:textColorHint="#999"
+                android:theme="@style/EditTextView" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="4"
+
+                android:text="@string/big_pic_open"
+                android:textColor="#333" />
+
+           <android.support.v7.widget.AppCompatCheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:theme="@style/MyCheckBox"
+               android:id="@+id/setting_big_mode"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setting_device_choose"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:text="@string/choose_device_type" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#f50"
+        android:gravity="center"
+        android:text="@string/confirm"
+
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</LinearLayout>

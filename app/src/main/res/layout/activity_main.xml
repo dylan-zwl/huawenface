@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FaceActivity">
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="100px"
+        android:layout_height="100px" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/face_detect_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/face_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460px"
+        android:background="@drawable/btn_face_login"
+        android:paddingTop="88px"
+        android:text="人脸识别登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

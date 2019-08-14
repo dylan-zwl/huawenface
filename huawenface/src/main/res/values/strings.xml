@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HuawenFace</string>
+    <string name="dialog_choose_device_title">选择设备</string>
+    <string name="loading">加载中...</string>
+    <string name="dialog_set_device_info">设置设备信息</string>
+    <string name="confirm">确定</string>
+    <string name="hint_device_id_input">请输入设备ID</string>
+    <string name="hint_group_id_input">请输入俱乐部ID</string>
+    <string name="have_no_camera">没有检测到摄像头</string>
+    <string name="have_no_internet_attack">没有检测到网络</string>
+    <string name="dialog_title_recog_result">识别结果</string>
+    <string name="choose_device_type">选择设备类型</string>
+    <string name="club_id">俱乐部ID</string>
+    <string name="device_id">设备ID</string>
+    <string name="hint_device_delay_time">请输入启动后人脸识别延迟(单位ms)</string>
+    <string name="delay_time">识别延时</string>
+    <string name="scale">识别精度</string>
+    <string name="hint_scale_input">人脸识别精度(范围2-32)</string>
+    <string name="big_pic_open">开启大图</string>
+</resources>
